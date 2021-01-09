@@ -188,4 +188,5 @@ opacity: 1;
 }
 .black {
     stroke: black;
+    fill:none;
 }
