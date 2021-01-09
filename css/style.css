@@ -1,0 +1,165 @@
+:root {
+    --main: #6a91a8;
+    --light: #db7214;
+    --lighter: #f3f1ef;
+    --dark: #a24036;
+    --darker: #2b3042;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 16px;
+    margin: 0;
+    color: #FFFFFF;
+    min-height: 100vh;
+}
+h1 {
+    color: var(--lighter);
+    font-family: "Roboto Slab", "Helvetica", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+   
+}
+.fill {
+    background-image: url("https://source.unsplash.com/collection/171168/1600x1200");
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    height: 100%;
+}
+.opacityfill {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    opacity: 0.45;
+    background-color: #21618d;
+}
+.wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.navigation {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+}
+.navigation li {
+    display: block;
+    margin: 0 2rem;
+    padding: .3rem .5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--lighter);
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+header {
+    flex: 1 0 auto;
+    position: sticky;
+    z-index: 1;
+}
+main {
+    flex: 1 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    flex: 0 0 auto;
+    z-index: 1;
+    background-color: var(--darker);
+    color: var(--lighter);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0px;
+}
+.soclinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--lighter);
+    list-style: none;
+    font-weight: 400;
+    margin: 35px 0;
+    
+}
+.soclinks li {
+    margin: 0 10px;
+    vertical-align: baseline;
+}
+.logo {
+    margin-top: 40px;
+    display:block;
+    text-align: center;
+}
+.logo svg {
+    height: 30vh;
+    width:auto;
+}
+.social svg {
+    height: 1.5rem;
+    vertical-align: sub;
+    width: 1.5rem;
+}
+.socialsvg path {
+fill: #D8D9D8;
+}
+.socialsvg:hover path {
+    fill: #FFFFFF;
+    }
+.button {
+    display:inline-block;
+    border: none;
+    font-size: 1em;
+    padding: 1.2rem 1.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing:  0.08rem;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    opacity: 0.85;
+    outline: none;
+    margin: 10px 2px;
+}
+.button:hover {
+opacity: 1;
+}
+.button:active {
+    transform: translateY(4px);
+}
+.main-background{
+    background-color: var(--main);
+}
+.light-background{
+    background-color: var(--light);
+}
+.lighter-background{
+    background-color: var(--lighter);
+}
+@media <screen> and () {
+    ss
+}
