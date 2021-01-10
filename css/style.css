@@ -5,6 +5,9 @@
     --dark: #a24036;
     --darker: #2b3042;
   }
+  * {
+    box-sizing: border-box;
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -84,11 +87,6 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
-}
-header {
-    flex: 1 0 auto;
-    position: sticky;
-    z-index: 1;
 }
 main {
     flex: 1 0 auto;
@@ -201,4 +199,7 @@ opacity: 1;
 }
 .white {
     opacity: 1;
+}
+.toggle {
+    display: none;
 }
