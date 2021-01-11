@@ -230,7 +230,7 @@ const presidentsData = [
         "name": "Joe Biden"
     }
 ];
-const doList = ['fighting', 'having a beer', 'enjoing the sunset', 'rock-n-rolling', 'breaking bad', 'voting for themselves', 'playng dices', 'incredible', 'playing golf', 'hanging out'];
+const doList = ['fighting', 'having a beer', 'enjoing the sunset', 'rock-n-rolling', 'breaking bad', 'voting for themselves', 'playing dices', 'incredible', 'playing golf', 'hanging out'];
 const presidentsContainer = document.querySelector(".presidents");
 const dices = document.querySelector(".dices");
 const button = document.querySelectorAll('.button');
