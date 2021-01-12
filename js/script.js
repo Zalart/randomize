@@ -333,4 +333,46 @@ button[1].addEventListener("click", () => {
             }
         }
     }, 400)
-}*/
+}
+
+function getAllPresidents() {
+    let result = [];
+    let presidentsRaws = document.querySelectorAll('.wikitable tbody tr');
+    presidentsRaws.forEach(element => {
+        // if (element.querySelectorAll('td') !== undefined)
+        let presidentsTds = element.querySelectorAll('th ~ td');
+        //alert(presidentsTd[1].innerHTML);
+        if (presidentsTds.length > 2) {
+            let presidency = "";
+            let presidentPhoto = "";
+            let presidentName = "";
+            for (let i = 0; i < 3; i++) {
+                if (i === 0) {
+                    let presidencyData = presidentsTds[i].querySelectorAll('span');
+                    // if (presidencyData === null) continue;
+
+                    presidencyData.forEach(element => {
+                        presidency === "" ? presidency = element.innerText + ' - ' : presidency += element.innerText;
+
+                    });
+                    //  result.push({ 'presidency': presidency });
+                } else if (i === 1) {
+
+                    //   if (presidentsTds[i].querySelector('img').src === null) continue;
+                    presidentPhoto = presidentsTds[i].querySelector('img').src;
+                    //  alert(presidentPhoto);
+                    // result.push({ 'photo': presidentPhoto });
+                } else if (i === 2) {
+                    presidentName = presidentsTds[i].querySelector('a').innerHTML;
+                    //  if (presidentName === null) continue;
+
+                }
+
+            }
+            // In case we need an array of objects
+            result.push({ 'presidency': presidency, 'photo': presidentPhoto, 'name': presidentName });
+        }
+    });
+    return result;
+}
+*/
